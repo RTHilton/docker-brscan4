@@ -1,4 +1,1 @@
-##Docker container for Brother scanner scan key support
-
-
-
+Originally a clone of brscan-skey and then integrated brother-scand and dropped brscan-skey. The Dockerfile has some hard-coded IP addresses being set until I can modify the code for brother-scand, as it uses the local IP address for communication, and needs to tell the scanner where to send scan requests.
