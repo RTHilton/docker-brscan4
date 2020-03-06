@@ -3,7 +3,7 @@
 mkdir -p /scantemp
 mkdir -p /scans
 cd /scantemp
-/opt/brother/docker_skey/bin/brother-scand -c /opt/brother/docker_skey/brother.config
+/opt/brother-scand/bin/brother-scand -c /opt/brother-scand/config/brother.config
 while true; do
   sleep 300
 done
