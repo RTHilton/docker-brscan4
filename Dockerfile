@@ -42,5 +42,6 @@ ENV LANG=C.UTF-8
 EXPOSE 54921
 EXPOSE 54925/udp
 
-#VOLUME /scans
 CMD /opt/brother-scand/scripts/start.sh
+#VOLUME /scans
+#VOLUME /config
