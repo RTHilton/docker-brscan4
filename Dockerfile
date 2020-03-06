@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 MAINTAINER Ke Zhang <plutino@gmail.com>
 
 RUN apt-get -y update && apt-get -y upgrade && apt-get -y clean
@@ -12,9 +12,9 @@ ADD scripts /opt/brother/docker_skey/scripts
 
 RUN cfg=`ls /opt/brother/scanner/brscan-skey/brscan-skey-*.cfg`; ln -sfn /opt/brother/docker_skey/config/brscan-skey.cfg $cfg
 
-ENV SCANNER_NAME="venus"
-ENV SCANNER_MODEL="DCP-7065DN"
-ENV SCANNER_IP_ADDRESS="192.168.1.16"
+ENV SCANNER_NAME="Brother"
+ENV SCANNER_MODEL="MFC-L2700W"
+ENV SCANNER_IP_ADDRESS="192.168.0.160"
 
 #VOLUME /scans
 CMD /opt/brother/docker_skey/scripts/start.sh
